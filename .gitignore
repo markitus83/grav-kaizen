@@ -34,6 +34,34 @@ grav-admin/user/localhost/config/security.yaml
 grav-admin/user/config/security.yaml
 grav-admin/vendor/*
 
+.sass-cache
+composer.lock
+cache/*
+assets/*
+logs/*
+images/*
+user/data/*
+
+# All but user folder
+.htaccess
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE.txt
+README.md
+backup/
+bin/
+composer.json
+index.php
+robots.txt
+system/
+tmp/
+vendor/
+webserver-configs/
+
 # Environments
 .env
 .gravenv
+
+# other
+grav-admin/.github
+grav-admin/.phan
