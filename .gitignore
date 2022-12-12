@@ -1,0 +1,39 @@
+# OS generated
+.DS_Store
+
+# phpstorm
+.idea/*
+
+# Composer
+.composer
+
+
+# Sass
+.sass-cache
+
+# Grav Specific
+grav-admin/backup/*
+!backup/.*
+grav-admin/cache/*
+!cache/.*
+grav-admin/assets/*
+!assets/.*
+grav-admin/logs/*
+!logs/.*
+grav-admin/images/*
+!images/.*
+grav-admin/user/accounts/*
+!user/accounts/.*
+grav-admin/user/data/*
+!user/data/.*
+grav-admin/user/plugins/*
+!user/plugins/.*
+grav-admin/user/themes/*
+!user/themes/.*
+grav-admin/user/localhost/config/security.yaml
+grav-admin/user/config/security.yaml
+grav-admin/vendor/*
+
+# Environments
+.env
+.gravenv
