@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+    webserver:
+        image: 'nginx:1.21.3'
+        working_dir: /application
+        container_name: kaizen-nginx
+        volumes:
+            - './grav-admin:/application'
+            - './nginx/nginx.conf:/etc/nginx/conf.d/default.conf'
+        ports:
+            - '80:80'
+
+    php-fpm:
+        #image: php:7.4.25-fpm-alpine3.13
+        build: php
+        working_dir: /application
+        container_name: kaizen-phpfpm
+        volumes:
+            - './grav-admin:/application'
